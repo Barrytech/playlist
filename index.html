@@ -1,23 +1,41 @@
+<!--
+
 <!DOCTYPE html>
 <html>
 
   <head>
       <title>Playlist</title>
-      
+      <link rel="icon" href="css/playlistlogo.png" type='image/x-icon'>
       <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
       <!-- Link style.css here -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
+<!--   <link rel="stylesheet" type="text/css" href="css/style.css">
 
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
        <!-- Link script.js here -->
-      <script src="js/script.js"></script>
-
+<!--     <script src="js/script.js"></script>
 
   </head>
 
   <body>
+    <div class="container">
+       <h1 style="text-align:center"> My playList </h1>
+       <div class="row">
+         <div class="col-md-2"></div>
+          <div id="me" class="col-md-2 ">
+                <div class="thumbnail">
+                    <img id="song1pic" src="" class="img-responsive" alt="Slice of cake">
+                </div>
+            </div> 
+            <div class="col-md-8"> </div>
+         </div>
+       </div>
+      
+    </div>
+   
+    
+    <br><br><br><br><br><br><br><br> <br> <br> <br> <br> <br> <br> 
     <div class="container text-center">
       <h1> My Playlist </h1>
       <input>
@@ -33,5 +51,91 @@
       
     </div>
   </body>
+
+</html>
+ -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Playlist
+    </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="icon" href="css/playlistlogo.png" type='image/x-icon'>
+    <link rel="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Link style.css here -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Link script.js here -->
+    <script src="js/script.js"></script>
+</head>
+
+<body class="jombotron">
+    <div class="container">
+        <h1 class="text-center" style="color: white; font-weight: bolder; font-style: italic; font-family: Times; font-size: 35px"> My Playlist </h1>
+        <p style="text-align: center; font-weight: bolder; font-style: italic; font-family: Times; font-size: 35px"> This is a colleciton of song that I think everyone should listen too.</p>
+        <div class="col-md-6 col-md-offset-3">
+
+            <button id="bringform" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                        Add Song
+                    </button>
+
+            <div class="result-text"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button  type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel"> </h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="titleInput" placeholder="Song Title">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="artistInput" placeholder="Artist">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="lengthInput" placeholder="Song Length">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="releaseDateInput" placeholder="Release Date">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="mp3UrlInput" placeholder="mp3 URL">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="imageUrlInput" placeholder="Image Url">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" id="createSong" data-dismiss="modal">Add Song</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
 
 </html>
