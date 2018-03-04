@@ -20,6 +20,12 @@
 
 var myPlayList = [
 	{
+		title:"Kanamacina",
+		artist:"Takana Zion",
+		mp3url:"https://youtu.be/h60Pg7a_1CU",
+		imageurl:"https://farm4.staticflickr.com/3345/5739945606_716baaf0a4_b.jpg",
+	},
+	{
 		title:"Police",
 		artist:"Takana Zion",
 		mp3url:"https://youtu.be/zPcntA97htg",
