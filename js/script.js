@@ -55,12 +55,6 @@ var myPlayList = [
 		mp3url:"https://youtu.be/PhwHhWQo95c",
 		imageurl:"https://farm8.staticflickr.com/7534/15685831767_a48545edea_b.jpg",
 	},	
-	{
-		title:"Only God Can Judge me",
-		artist:"Tupac Shakur",
-		mp3url:"https://youtu.be/rh9S4vLDDOI",
-		imageurl:"https://farm6.staticflickr.com/5260/5442775887_0c6d54cdbc_b.jpg",
-	},
 ]
 
 
